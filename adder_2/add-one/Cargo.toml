@@ -1,0 +1,7 @@
+[package]
+name = "add-one"
+version = "0.1.0"
+authors = ["Santiago Botero Correa <sabotero@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
