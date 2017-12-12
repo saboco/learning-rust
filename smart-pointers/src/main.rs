@@ -20,6 +20,14 @@ fn main(){
     assert_eq!(3, x);
     assert_eq!(3, *y);
 
-    println!("x {}", x);
+    println!("x {}", x); 
     println!("y {:?}, *y {:?}", y, *y);
+
+    // deref coercions
+    let m = MyBox::new(String::from("Rust"));
+    println!("m is {:?}", m);
+    hello(&m);
+}
+fn hello(name: &str) {
+    println!("Hello, {}!", name);
 }
